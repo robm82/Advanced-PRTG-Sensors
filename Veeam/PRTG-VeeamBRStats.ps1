@@ -143,6 +143,7 @@ Function Get-vPCRepoInfo {
     }
     Process {
         Foreach ($r in $Repository) {
+            "Start Processing '$($r.Name)'..."
             # Refresh Repository Size Info
             try {
                 if ($PSRemote) {
